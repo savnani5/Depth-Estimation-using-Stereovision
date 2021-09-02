@@ -73,7 +73,7 @@ for each pixel using the below formula:
 
 
 ## Input
-[Input Data](https://drive.google.com/drive/folders/1D70GsEdZhFj3jked1Vh-x61ILViSFlOp?usp=sharing)
+[Input Data](https://drive.google.com/drive/folders/1WQ_XcDhuWhyYxVmP2qT-3SggmiC00LQa?usp=sharing)
 
 ## Output
 [Output Data](https://drive.google.com/drive/folders/1D70GsEdZhFj3jked1Vh-x61ILViSFlOp?usp=sharing)
