@@ -5,6 +5,7 @@ scenario but taken from two different camera angles. By comparing the
 information about a scene from 2 vantage points, we can obtain the 3D
 information by examining the relative positions of objects. For detailed explanation checkout [this link](https://github.com/savnani5/Depth-estimation-using-stereovision/blob/main/ENPM673-%20PROJ3.pdf).
 
+---
 ## Pipeline
 
 ### Calibration
@@ -71,13 +72,14 @@ for each pixel using the below formula:
 
 ![Depth Map](git_images/img5.png)
 
-
+---
 ## Input
 [Input Data](https://drive.google.com/drive/folders/1WQ_XcDhuWhyYxVmP2qT-3SggmiC00LQa?usp=sharing)
 
 ## Output
 [Output Data](https://drive.google.com/drive/folders/1D70GsEdZhFj3jked1Vh-x61ILViSFlOp?usp=sharing)
 
+---
 ## How to Run the Code
 1) Change the dataset directory in *main.py* file:
 
@@ -93,7 +95,7 @@ for each pixel using the below formula:
     ```sh
     python main.py
     ```
-
+---
 ## References
 1) https://docs.opencv.org/master/dc/dc3/tutorial_py_matcher.html
 2) https://cmsc733.github.io/2019/proj/p3/#estE
