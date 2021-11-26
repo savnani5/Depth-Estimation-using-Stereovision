@@ -68,7 +68,7 @@ sum of squared differences approach and save the grayscale and heatmap images. W
 Using the disparity map from previous step compute the depth information
 for each pixel using the below formula:
 
-    ```depth = (baseline*f)/disparity```
+    depth = (baseline*f)/disparity
 
 ![Depth Map](git_images/img5.png)
 
