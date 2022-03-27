@@ -68,53 +68,6 @@ def draw_keypoints_and_match(img1, img2):
 
 
 
-# def normalize_points(list_of_cood_list):
-    
-#     orignal_list_of_cood_list = list_of_cood_list.copy()
-#     Trans_matrices = []
-#     for cood_list in list_of_cood_list:
-        
-#         # Centroid computation
-#         x_total, y_total = 0, 0
-#         for point in cood_list:
-#             x_total += point[0]
-#             y_total += point[1]  
-
-#         x_mean = x_total/len(cood_list)
-#         y_mean = y_total/len(cood_list)
-
-#         # Recenter the points
-#         for point in cood_list:
-#             point[0] -= x_mean
-#             point[1] -= y_mean
-
-#         # Getting the scale terms
-#         sum_of_squares = 0
-#         for point in cood_list:
-#             sum_of_squares += (point[0]**2 + point[1]**2)
-        
-#         s = 1.414/((1/len(cood_list))*sum_of_squares)**0.5
-
-#         # Construct the transformation matrices
-#         A = np.array([s,0,0],
-#                      [0,s,0],
-#                      [0,0,1])
-
-#         B = np.array([1, 0, -x_mean],
-#                      [0, 1, -y_mean],
-#                      [0, 0, 1])
-        
-#         Trans_matrices.append(np.matmul(A,B))
-
-#     # Normalizing the original points
-#     for i in range(2):
-#         for point in orignal_list_of_cood_list[i]:
-#             new_point = np.dot(Trans_matrices[i], np.array([point[0], point[1], 1]))       
-#             point[0] = new_point[0]//new_point[2]
-#             point[1] = new_point[1]//new_point[2]
-
-#     return orignal_list_of_cood_list
-
 
 def calculate_F_matrix(list_kp1, list_kp2):
     """This function is used to calculate the F matrix from a set of 8 points using SVD.
